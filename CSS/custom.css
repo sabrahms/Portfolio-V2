@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
 p {
@@ -32,7 +32,7 @@ p {
     p {
         margin: 0 0 35px;
         font-size: 20px;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 }
 
@@ -46,7 +46,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #42dca3;
 }
 
 .light {
@@ -58,7 +58,7 @@ a:focus {
     border-bottom: 5px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: "Montserrat Alternates","Helvetica Neue", sans-serif;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .navbar-custom .navbar-brand {
@@ -85,6 +85,7 @@ a:focus {
 }
 
 .navbar-custom .nav li a {
+    border: 2px solid #fff;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -92,8 +93,12 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: #333;
+    border: 2px solid #42dca3;
+    color: #000;
+    background-color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 .navbar-custom .nav li a:focus,
@@ -107,11 +112,18 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+
+    border: 2px solid #42dca3;
+    color: #42dca3;
+    background-color: #fff;
+
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #000;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 @media(min-width:768px) {
@@ -119,7 +131,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: #fff;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -128,7 +140,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: #fff;
     }
 }
 
@@ -139,8 +151,6 @@ a:focus {
     height: auto;
     padding: 0;
     text-align: center;
-    color: #000;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -176,29 +186,6 @@ a:focus {
     }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #000;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .6s ease-in-out;
-    -moz-transition: background .6s ease-in-out;
-    transition: background .6s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 1;
-    border: 2px solid #000;
-    background-color: #333;
-    transition: .3s ease-in-out;
-}
-
 .content-section {
     padding-top: 100px;
 }
@@ -229,9 +216,9 @@ a:focus {
     text-transform: uppercase;
     font-family: "Montserrat Alternates","Helvetica Neue",sans-serif;
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .btn-default {
@@ -242,8 +229,7 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
-    outline: 0;
+    border: 2px solid #42dca3;
     color: #000;
     background-color: #42dca3;
 }
@@ -280,16 +266,17 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
+    background: gray;
     background: rgba(255,255,255,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
+    background: gray;
     background: rgba(255,255,255,.2);
 }
 
+/*
 img::selection {
     background: 0 0;
 }
@@ -297,7 +284,20 @@ img::selection {
 img::-moz-selection {
     background: 0 0;
 }
+*/
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.gallery {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+.gallery .horizontal-gallery {
+    display: inline;
 }
