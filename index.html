@@ -1,170 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>SA - Portfolio</title>
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="/css/custom.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
 
-    <title>SA - Portfolio</title>
-    
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <!-- My CSS -->
-
-
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span class="light">Sam</span>|Abrahms
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#work">WORK</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-offset-2">
-                        <div>
-                            <img src="Images/bw-main-2.png">
-                        </div>
-                    </div>
-                </div>
+    <body class="grid grid-pad">
+        <div class="col-1-2 title-text">
+            <h2 class="subtitle fancy"><span>Sam Abrahms</span><br>
+            Junior Front End Developer</h2>
+            <div class="copy">
+                <h4>After graduating from Iowa State in July 2014 with a BS in Marketing, I transitioned to web development by enrolling in an online, mentor-led coding bootcamp called BLOC. I completed the Front End Web Development Apprenticeship in Oct 2015. I will be continuing my web development education at Waukesha County Technical College in Jan 2016.</h4>
             </div>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h1>I AM SAM</h1>
-                        <p>B.A. Iowa State University<br>Bloc.io Frontend Web Development Apprenticeship</p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </div>
+        <br>
+        
+           
+    <!-- Work Section -->
+        <section> 
+            <div class="col-1 text-center">
+                <div class="work-responsive">
+                    <img id="macs" src="Images/blocjams.png" class="img-responsive">
+                    <span id="details">
+                        <a href="/Pages/dog.html" class="btn btn-default btn-lg">View</a>
+                    </span>
+                </div>    
+                <div class="work-responsive">
+                    <img id="macs" src="Images/dogrescue.png" class="img-responsive">
+                    <span id="details">
+                        <a href="/Pages/dog.html" class="btn btn-default btn-lg">View</a>
+                    </span>
+                </div> 
+                <div class="work-responsive">
+                    <img id="macs" src="Images/blocitoff.png" class="img-responsive">
+                    <span id="details">
+                        <a href="/Pages/dog.html" class="btn btn-default btn-lg">View</a>
+                    </span>
+                </div>  
             </div>
-    </section>
+            <br>
+        </section>
 
-      <!-- Work Section -->
-<section id="work" class="container content-section text-center">
-    <div class="container">
-        <div class="row">
-            <div class="gallery horizontal-gallery">
-                <img class="work-modals" src="Images/blocitoff.png">
-                <img class="work-modals" src="Images/blocitoff.png">
-                <img class="work-modals" src="Images/blocitoff.png">
-            </div>                    
-        </div>
-    </div>
 
-<!--
-     Work Modal 
-    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span> 
-                    <span class="sr-only"></span>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">ToDoList</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="" id="imagepreview">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
    
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
-                <p><a href="mailto:abrahms.sam@gmail.com" class="btn btn-default btn-lg">Email</a>
-                </p>
+            <div class="text-center">
+                <div class="col-1-2">
+                    <p>Sam Abrahms<br>262-707-9166<br>abrahms.sam@gmail.com    
+                </div>
                 <ul class="list-inline">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/samabrahms" class="btn btn-default btn-lg" target="_blank">LinkedIn</a>
                     </li>
                     <li>
                         <a href="https://github.com/sabrahms" class="btn btn-default btn-lg" target="_blank">Github</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
-        </div>
-    </footer>
-
-    
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-
-
-</body>
-
+        </section>
+    </body>
 </html>
