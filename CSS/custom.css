@@ -3,28 +3,17 @@
 }
 .col-1-2 {
     width: 60%;
-    margin-left: 20%;
-    margin-right: auto;
+    margin-right: 20%;
+    margin-left: auto;
 }
+
 .col-1-4 {
     width: 25%;
 }
 .col-1-8 {
     width: 12.5%;
 }
-/*
 
-.grid:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-*/
-
-[class*='col-'] {
-    padding-right: 20px;
-    padding-left: 20px;
-}
 
 .grid-pad {
     padding: 20px 20px 20px 20px;
@@ -32,13 +21,25 @@
 
 .fancy span {
     display: inline-block;
-    position: relative;
+    position: absolute;
 }
 
 .copy {
-    font: 1em;
-    text-align: justify;
-    min-width: 25%;
+    max-height: inherit;
+    font-size: 18px;
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 1.45;
+    
+    @media (max-width: 900px) {  
+            font-size: 12px;
+        }
+        @media (max-width: 500px) {  
+            font-size: 12px;
+        }
+        @media (max-width: 300px) {  
+            font-size: 10px;
+        }
 }
 
 
@@ -46,29 +47,41 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #000;
     background-color: #fff;
-    position: relative;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 35px;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.2;
-    text-align: center;
 }
 
 
-
-
-p {
-    margin: 20px;
+html {
+    padding: 1rem;
     font-size: 18px;
-    line-height: 1.25;
+    font-weight: 100;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+/*    min-width: 400px;*/
+
+        @media (max-width: 900px) {  
+            font-size: 15px;
+        }
+        @media (max-width: 500px) {  
+            font-size: 14px;
+        }
+        @media (max-width: 300px) {  
+            font-size: 12px;
+        }
 }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    line-height: 1.1;
+}
+
+
+
+
 
 
 a {
@@ -87,29 +100,25 @@ a:focus {
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: "Montserrat Alternates","Helvetica Neue",sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin: .1em;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 .btn-default {
-    border: 2px solid #42dca3;
-    color: #42dca3;
+    border: 2px solid #000000;
+    color: #000000;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 2px solid #42dca3;
+    border: 2px solid #000000;
     color: #000;
-    background-color: #42dca3;
-}
-
-.title-text {
-    border-bottom: 5px bold black;
-    border-bottom-left-radius: 5px;   
+    background-color: #e6e6e6;
 }
 
 
@@ -135,7 +144,8 @@ a:focus {
     width: 400px;
     height: auto;
     cursor: default;
-    margin: 35px 0 25px 0;
+    margin-top: 35px; 
+    margin-bottom: 25px;
 }
 
 #details {
