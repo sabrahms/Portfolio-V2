@@ -134,8 +134,8 @@ a:focus {
     display: inline-block;
     width: 400px;
     height: auto;
-    cursor: pointer;
-    margin: 25px 0 25px 0;
+    cursor: default;
+    margin: 35px 0 25px 0;
 }
 
 #details {
